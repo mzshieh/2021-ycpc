@@ -1,24 +1,22 @@
-There are $n$ different types of cakes, 
-and the weight of a piece of the $i$-th type of cakes is $w_i$ grams.
-Assume we have an unlimited supply of each kind of cakes.
+In Gakuentoshi, everyone has their own unique skill. 
+Uiharu and Shirai are holding a learning event to 
+let their friends to teach each other their skills 
+and make new friends. Uiharu and her friends are red team. 
+Shirai and her friends are white team.
 
-$q$ monsters are hungry, and Cindy will feed them with cakes.
-The monsters never waste, so they will eat entire piece of cake.
-The monsters are curious, so they prefer to eat different types of cakes. 
-Every monster eat any type of cakes at most one piece. 
-That is, no monster eat two or more pieces of any one type of cakes.
-Each monster has its own preference on cakes.
-The $j$-th monster hates the $x_j$-th type of cakes, so
-the $j$-th monster never eats the $x_j$-th type of cakes.
-With the above contraints, it is not hard to observe that every monster will 
-eat a subset of the $n$ types of cakes. Moreover, every monster eats exactly
-one piece of each type in the subset. 
+Each one in red team will pick one of white team's members as student. 
+And each one in white team will pick one of red team's members as students. 
+Everyone will pick a student and can only be one person’s student. 
+First, red team will teach their students their own skill. 
+And white team will teach their students their own skill. 
+Everyone learn one new skill now. 
+Then red team will teach their students the new skill they just learned and 
+so does white team. 
+This won't stop until they cannot learn new skill.
 
-To keep the monster happy, Cindy must feed the $j$-th monster with 
-exactly $W_j$ grams of cakes. If the $j$-th monster does not have exactly $W_j$
-grams of cake or Cindy feeds the $j$-th monster with the $x_j$-th type of cakes,
-then the $j$-th monster will become angry.
-Cindy wonders how many different sets of cakes she can feed the $j$-th monster 
-without make it angry.
+Both red team and white team have $N$ people. 
+$M$ people already choose a student.
+Uiharu wonders how many possibilities are left so everyone could 
+learn all the skill the attendee has. Can you help her?
 
-Please write a program to help Cindy.
+Two possibility are considered different if anyone choose a different student.
