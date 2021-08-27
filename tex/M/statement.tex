@@ -1,0 +1,10 @@
+Monotone chain algorithm is a popular method to construct a 2D convex hull.
+In this problem, an upper monotone chain of length $n$ is 
+a sequence of points $(x_1,y_1),\ldots,(x_n,y_n)$ on the 2D-plain such that
+\begin{itemize}
+\item $x_1 < x_2 < \cdots < x_n$.
+\item $\frac{y_{i+1}-y_i}{x_{i+1}-x_i} < \frac{y_i-y_{i-1}}{x_i-x_{i-1}}$.
+\end{itemize}
+
+
+Please write a program to generate an upper monotone chain of length $n$.

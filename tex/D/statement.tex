@@ -1,0 +1,17 @@
+A multiset of two elements $\{x, y\}$ is a good pair if $x=y$.
+A multiset of three elements $\{x,y,z\}$ is a good triple 
+if $x=y=z$ or $\{x,y,z\} = \{\min(x,y,z),\min(x,y,z)+1,\min(x,y,z)+2\}$.
+In this problem, 
+a partition of a multiset $S$ is a set $P$ of subsets of $S$ such that
+$\bigcup_{p\in P}p = S$ and $\sum_{p\in P}|p| = |S|$.
+A partition $P$ of a multiset $S$ of $3n+2$ elements is a good if 
+the following hold.
+\begin{itemize}
+\item $P$ contains exactly one good pair.
+\item $P$ contains exactly $n$ good triples.
+\end{itemize}
+
+Given a positive integer $n$ and a multiset $S$ of $3n+2$ elements where
+every element in $S$ \emph{repeats at most four times} in $S$.
+Please write a program to determine whether one can decompose $S$ 
+into a good partition.

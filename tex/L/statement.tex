@@ -1,0 +1,14 @@
+A string is a sequence of characters.
+A binary string is a string consisting of only $0$'s and $1$'s.
+Suppose you are given a binary string $s=c_1c_2\cdots c_n$ of length $n$.
+A run in $s$ is a continuous segement $c_{b}c_{b+1}\cdots c_{e-1}c_e$ such that the following conditions hold.
+\begin{itemize}
+\item $b=1$ or $c_{b-1}\neq c_b$. 
+\item $e=n$ or $c_{e+1}\neq c_e$
+\item $c_b=c_{b+1}=\cdots=c_{e-1}=c_e$
+\end{itemize}
+For example, \verb+11011100101+ has $7$ runs.
+
+For every non-negative integer $x$, we can always represent $x$ by a binary string using the binary numeral system. 
+Let $t(x)$ be the shortest binary string representing $x$ in the binary numberal system.
+Write a program to compute the number of runs of the string $t(B)t(B+1)\cdots t(E)$.

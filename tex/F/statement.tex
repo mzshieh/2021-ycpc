@@ -1,0 +1,30 @@
+Iðunn is the goddess of apples of youth in Norse mythology. 
+It is said that the gods in Norse mytholody must eat apples of youth to 
+stop aging. 
+Loki once decoyed Iðunn out of Asgard (where the gods live). 
+Without Iðunn's 
+apples, the gods became old and grey. They demanded Loki to return Iðunn. 
+Loki turned her into a nut and took her back to Asgard. 
+
+Iðunn's job is collecting apples of youth in the garden of Asgard. 
+There are $n$ apple trees (numbered from $1$ to $n$) and $n-1$ trails 
+(numbered from $1$ to $n-1$) in the garden. 
+Each trail ends at two different apple trees. 
+For any pair of apple trees, Iðunn can move from one to another along 
+the trails in the garden.
+Suppose that apple 
+tree $i$ has $d_i$ trails ending at it. Iðunn collects apples according the 
+following procedure everyday.
+\begin{enumerate}
+\tightlist
+\item Iðunn randomly moves to a tree with probability $\frac{d_i}{2n-2}$.
+\item Iðunn uniformly randomly picks a trail ending at her current position, 
+then she moves to the other end of the trail.
+\item Collect apples from the tree at her position. 
+If the tree is numbered $i$, then she should collect $a_i$ apples.
+\item Repeat the previous two steps for $k$ times.
+\end{enumerate}
+
+Write a program to compute the excepted number of apples daily collected by 
+Iðunn.
+

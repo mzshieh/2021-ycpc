@@ -1,0 +1,6 @@
+#!/bin/sh
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+#kotlin -cp /var/lib/judgehost/judgings/icpc-tw/endpoint-default/executable/verifyD/ VerifyDKt "$1" "$2"
+kotlin -cp ${SCRIPTPATH} VerifyMonotoneKt "$1" "$2"
+exit $?

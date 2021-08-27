@@ -1,0 +1,166 @@
+\documentclass[fleqn, 12pt, a4paper]{article}
+%\special{pdf:minorversion 7}
+\usepackage{cmap}
+
+\usepackage{titling}
+\title{2020 NCTU Annual Programming Contest}
+
+\usepackage[xetex,
+			pdfencoding=auto,
+			pdftitle={\thetitle},
+            pdfcreator={}]{hyperref}
+			
+\usepackage[left=20mm, right=20mm, top=20mm, bottom=25mm]{geometry}
+\setlength{\headheight}{16mm}
+\setlength{\headsep}{2mm}
+\setlength{\parindent}{0mm}
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\setstretch{1.2}
+
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage[overlay, absolute]{textpos}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{xfp}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usetikzlibrary{trees}
+\usetikzlibrary{calc}
+\usepackage{amsmath}
+%\setlength{\mathindent}{0pt}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{fancyhdr}
+\fancypagestyle{document}
+{
+	\fancyhf{}
+	\fancyhead[L]{\includegraphics[height=14mm]{image/nctu.png}}
+	\fancyhead[R]{National Chiao Tung University\\[1mm]2020 Annual Programming Contest\vspace{1mm}}
+    \fancyfoot[C]{\thepage}
+}
+\pagestyle{document}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily, breaklines=false, frame=single, showlines=true}
+
+\usepackage{enumitem}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{changepage}
+\usepackage{parskip}
+
+\newcounter{pid}
+\newcounter{ncase}[pid]
+
+\newcommand{\ith}[1]{$#1^\text{th}$}
+\newcommand{\tightlist}{\setlength\itemsep{0mm}\setlength\parskip{0mm}}
+
+\newcommand{\testdata}[1]
+{
+	\stepcounter{ncase}
+	\IfFileExists{../#1/data/sample/\arabic{ncase}.in}
+    {
+		\vspace{-3mm}
+		\begin{paracol}{2}
+			\subsection*{Sample Input \arabic{ncase}}
+			\lstinputlisting{../#1/data/sample/\arabic{ncase}.in}
+			\switchcolumn
+			\subsection*{Sample Output \arabic{ncase}}
+			\lstinputlisting{../#1/data/sample/\arabic{ncase}.ans}
+		\end{paracol}
+		\testdata{#1}
+    }{}
+}
+
+\newcommand{\field}[4][1] % necessity, dir, field name, file name
+{
+	\ifthenelse{\equal{#1}{1}}
+	{
+		\subsection*{#3}\IfFileExists{#2/#4}{\input{#2/#4}}{}
+	}
+	{
+		\IfFileExists{#2/#4}{\subsection*{#3}\input{#2/#4}}{}
+	}
+}
+
+\newcommand{\problem}[4] % dir, title, time, memory
+{
+	% \checkoddpage
+	% \ifoddpage
+		% do nothing
+	% \else
+	% 	\begin{center}\vspace*{\fill}
+	% 		{\LARGE Almost blank page}
+	% 	\vspace*{\fill}\end{center}
+	% 	\newpage
+	% \fi
+
+	\stepcounter{pid}
+    \vspace*{-8mm}
+    \begin{center}
+		{\Large Problem \Alph{pid}}\\[2mm]
+		{\LARGE #2}\\[2mm]
+		\begin{tabular}{r@{}c@{ }l}
+			Time limit&:& #3 \ifthenelse{\equal{#3}{1}}{second}{seconds}\\
+			Memory limit&:& #4 \ifthenelse{\equal{#4}{1}}{megabyte}{megabytes}
+		\end{tabular}
+	\end{center}
+
+	\field{#1}{Problem Description}{statement.tex}
+	
+	\field{#1}{Input Format}{input.tex}
+	%\ifthenelse{\equal{#1}{D}}{\newpage}{}%%%
+	
+	\field{#1}{Output Format}{output.tex}
+	%\ifthenelse{\equal{#1}{I}}{\newpage}{}%%%
+	%\ifthenelse{\equal{#1}{L}}{\newpage}{}%%%
+	
+	\field[0]{#1}{Technical Specification}{spec.tex}
+	\vspace{3mm}
+	%\ifthenelse{\equal{#1}{A}}{\newpage}{}%%%
+	%\ifthenelse{\equal{#1}{B}}{\newpage}{}%%%
+	%\ifthenelse{\equal{#1}{E}}{\newpage}{}%%%
+	%\ifthenelse{\equal{#1}{H}}{\newpage}{}%%%
+	
+	\testdata{#1}
+	\field[0]{#1}{Hint}{hint.tex}
+	\field[0]{#1}{Note}{note.tex}
+	\newpage
+}
+
+\usepackage{layout}
+
+\begin{document}
+\abovedisplayshortskip=0pt
+\belowdisplayshortskip=0pt
+\abovedisplayskip=2pt
+\belowdisplayskip=2pt
+
+%\tableofcontents
+%\vspace*{8mm}
+\problem{A}{Animal Crossing}{1}{256}
+\problem{B}{Pr}{1}{256}
+\problem{C}{Cakes}{5}{256}
+\problem{D}{Decompose}{2}{256}
+\problem{E}{Eddy's Secret}{15}{256}
+\problem{F}{Apple}{1}{256}
+\problem{G}{Vintage Screen}{1}{256}
+\problem{H}{Yet Another Vintage Screen}{1}{256}
+\problem{I}{Bamboo Rats}{5}{256}
+\problem{J}{Colorful Edges}{2}{256}
+\problem{K}{Intersections}{3}{256}
+%\problem{L}{Runs}{1}{256}
+%\problem{M}{Monotone Chain}{1}{256}
+\end{document}
+
