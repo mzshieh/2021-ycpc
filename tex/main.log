@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 14:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,17 +1191,18 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (../K/data/sample/2.ans) [15] [16] (./L/statement.tex) (./L/input.tex)
 (./L/output.tex) (./L/spec.tex) (../L/data/sample/1.in) (../L/data/sample/1.ans
 ) [17] (./M/statement.tex) (./M/input.tex) (./M/output.tex) (./M/spec.tex)
-(../M/data/sample/1.in) (../M/data/sample/1.ans) [18] (./main.aux)
+(../M/data/sample/1.in) (../M/data/sample/1.ans) (../M/data/sample/2.in)
+(../M/data/sample/2.ans) [18] [19] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29202 strings out of 476919
- 578185 string characters out of 5827675
+ 29208 strings out of 476919
+ 578314 string characters out of 5827675
  974908 words of memory out of 5000000
- 48470 multiletter control sequences out of 15000+600000
+ 48472 multiletter control sequences out of 15000+600000
  407328 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,12n,89p,1193b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,13n,89p,1193b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (19 pages).

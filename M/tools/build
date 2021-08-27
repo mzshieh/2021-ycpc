@@ -1,2 +1,0 @@
-#!/bin/sh
-kotlinc -d . -jvm-target 1.8 verifyMonotone.kt
