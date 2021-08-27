@@ -1,11 +1,20 @@
-Given $n$ lines $L_1,L_2,\ldots,L_n$ where 
-$L_i$ is $a_ix+b_iy=c_i$ for $i\in \{1,2,\dots,n\}$.
-In this problem, all the coefficients $a_i$'s, $b_i$'s and $c_i$'s are integers.
-Two lines intersect if they have some point in common. 
-Such points are called intersections of lines.
+There is an epidemic of KOVID-21 spreading around the world.
+People's lives are severely affected by the KOVID-21. 
+Especially the people like to travel around the world.
 
-In general, to compute the number of intersections of lines can be hard.
-Tn this problem, you may assume there are no three lines have a common point.
-To save time, if there are more than $10^6$ intersections of lines,
-please output ``\verb+TOO MANY+''.
-Otherwise, please output the number of intersections of lines.
+Fortunately, the vaccine, Hoderna, is coming.
+Hoderna is so powerful that the person who has been vaccinated with Horderna will not be infected with KOVID-21 at all.
+But Hoderna is hard to preserve. 
+For convenience, the government wants to find **exactly one** place to be a vaccination station.
+Finding the place of the vaccination station is a hard problem.
+If the place of the vaccination station is too far for some person. 
+They will be annoyed with the government.
+
+The country is a 2D plane, there are $n$ residents.
+The $i$th resident lives on the $(x_i,y_i)$ of the 2D plane.
+Guarantee the residents live in the integer position, which means $x_i,y_i$ are integers.
+In one unit, the person in the position $(x,y)$ can go to one of the eight position
+$(x-1,y-1),(x-1,y),(x-1,y+1),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y),(x+1,y+1)$.
+The annoy value of a resident is the number of time units that he needs to spend to go to the vaccination station from their home.
+Please help the government to **minimize** the **sum** of annoyance with all residents.
+

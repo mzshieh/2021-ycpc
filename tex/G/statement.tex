@@ -1,20 +1,19 @@
-The classic computer screens can only display text.
-Typically, such a screen has 24 rows and 80 columns.
-Vintage Display Technology Company (VDTC) plans to produce some old fashioned 
-computer screen. 
-But it is no cool to display only 24 rows on one screen.
-VDTC wants their screens to have enough rows for some classical literature
-under the constraint that each row may only display 80 characters.
-To ideally display an article on the screen, the following rules may not be
-violated.
-\begin{itemize}
-\tightlist
-\item The words must displayed in the order in the article.
-\item Any of the words must be displayed on exactly one row. 
-\item Any two consecutive words must be separated by a blank or a newline. 
-\end{itemize}
+There is a grassland in front of Alice's house with some beautiful flowers.
+Alice wants to fence up all of the flowers to be her garden.
 
-Your task is to help VDTC to compute how many rows are required to display
-an article. If you manage to write such a program, then VDTC may use the 
-program to analyze articles and determine the ideal number of rows of 
-their new products.
+The grassland is a 2D plane, and there are $m$ flowers on the grassland.
+The $j$-th flower is on the integer position $(x_j,y_j)$.
+There are also $n$  wood piles on the grassland.
+The $i$-th flower is on the integer position $(x_i,y_i)$;
+She wants her gardan is a **convex polygon**, 
+that means if she wants to move from one place to another place in her garden, 
+she can go in a straight line without going out of her garden.
+The garden should have a positive area and all of the vertex should be a  wood pile on the grassland.
+All of the flowers should be **strictly** inside the garden, 
+that means the flower can not be outside the garden or on the border of the garden.
+She needs some fences to fence up her garden so she wants to minimize the total length of the fences.
+If she wants to put the fences between the $a$th  wood pile and the $b$the  wood pile, she needs $\sqrt{(x_a-x_b)^2+(y_a-y_b)^2}$ length of fences.
+
+She is curious if she wants to use the $i$-th  wood piles as one of the vertices in her garden.
+What is the minimal length of fences she needs? Can you help her?
+

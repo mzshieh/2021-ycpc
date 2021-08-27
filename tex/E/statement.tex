@@ -1,10 +1,17 @@
-There is a secret string $s$ with only English letters in lowercase.
-And Eddy wonders how many different strings satisfying the following conditions.
-\begin{itemize}
-\item The string is of length $x$.
-\item The string consists of only English letters in lowercase.
-\item The secret string is a substring of the string.
-\end{itemize}
+$X$ is a positive number and $P$ is a set of potrysitive numbers. 
+Compute the total number of combinations of the $P$'s elements 
+such that the sum of the elements of each combination is equal to $X$. 
+The elements of $P$ can be reused.
 
-Because the number can be very large, please output the number 
-modulo $998244353$.
+The followings are three examples.
+Example One: $X = 6, P = \{2, 3, 7\}$. 
+The number of combinations is $2$. 
+The combinations are: 1) $\{2,2,2\}$; and 2) $\{3,3\}$.
+
+Example Two: $X = 7, P = \{2, 7, 3\}$. 
+The number of combinations is $2$. 
+The combinations are: 1) $\{2,3,2\}$; and 2) $\{7\}$.
+
+Example Three: $X = 9, P = \{2, 3, 7, 3\}$. 
+The number of combinations is $3$. 
+The combinations are: 1) $\{2, 7\}$; 2) $\{2, 2, 2, 3\}$; and 3) $\{3, 3, 3\}$.

@@ -1,17 +1,28 @@
-A multiset of two elements $\{x, y\}$ is a good pair if $x=y$.
-A multiset of three elements $\{x,y,z\}$ is a good triple 
-if $x=y=z$ or $\{x,y,z\} = \{\min(x,y,z),\min(x,y,z)+1,\min(x,y,z)+2\}$.
-In this problem, 
-a partition of a multiset $S$ is a set $P$ of subsets of $S$ such that
-$\bigcup_{p\in P}p = S$ and $\sum_{p\in P}|p| = |S|$.
-A partition $P$ of a multiset $S$ of $3n+2$ elements is a good if 
-the following hold.
-\begin{itemize}
-\item $P$ contains exactly one good pair.
-\item $P$ contains exactly $n$ good triples.
-\end{itemize}
+Two villages are connected together by a two-way road. 
+In an environment, there are many villages. 
+A traveler starts from a village (source) and moves to a predefined village 
+(destination). 
+To do so, the traveler moves along the roads to visit villages until the 
+traveler reaches the destination. 
+The traveler can find some moon stones at a village. 
+Each road has a travel cost. 
+Determine a path for the traveler so that the traveler takes the lowest cost. 
+If there are two paths with the same cost, 
+the one with the highest amount of moon stones is selected.
+The total influence cost of a village, $v$, 
+is the sum of the cost of all the villages in the $k$-neighborhood of 
+village $v$. The $k$-neighborhood of village $v$ does not include the 
+village $v$ itself. 
+For two different villages $u$ and $v$, village $u$ is a member of the 
+$k$-neighborhood of village $v$ **iff** there are at most $k$ roads that are 
+visited for moving from village $v$ to village $u$.
 
-Given a positive integer $n$ and a multiset $S$ of $3n+2$ elements where
-every element in $S$ \emph{repeats at most four times} in $S$.
-Please write a program to determine whether one can decompose $S$ 
-into a good partition.
+The travel cost from one village $v_s$ to an adjacent village $v_a$ 
+via road $r$ is computed as:
+$$\mbox{Travel cost} = c_t(v_s) + c_r$$
+where road $r$ connects villages $v_s$ and $v_a$, 
+$c_t(v_s)$ is the total influence cost of $v_s$, 
+and $c_r$ is the cost of the road. 
+
+The villages have unique names. 
+A name is formed by four letters in lowercase.
