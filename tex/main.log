@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 13:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1169,10 +1169,9 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
 ] (./B/statement.tex) (./B/input.tex)
 (./B/output.tex) (./B/spec.tex) (../B/data/sample/1.in) (../B/data/sample/1.ans
-) (../B/data/sample/2.in) (../B/data/sample/2.ans) [2] (./C/statement.tex)
-(./C/input.tex) (./C/output.tex) (./C/spec.tex [3]) (../C/data/sample/1.in)
-(../C/data/sample/1.ans) [4] (./D/statement.tex) (./D/input.tex)
-(./D/output.tex) (./D/spec.tex) [5] (../D/data/sample/1.in)
+) [2] (./C/statement.tex) (./C/input.tex) (./C/output.tex) (./C/spec.tex
+[3]) (../C/data/sample/1.in) (../C/data/sample/1.ans) [4] (./D/statement.tex)
+(./D/input.tex) (./D/output.tex) (./D/spec.tex) [5] (../D/data/sample/1.in)
 (../D/data/sample/1.ans) (../D/data/sample/2.in) (../D/data/sample/2.ans)
 (../D/data/sample/3.in) (../D/data/sample/3.ans) [6] (./E/statement.tex)
 (./E/input.tex) (./E/output.tex) (./E/spec.tex) (../E/data/sample/1.in)
@@ -1191,17 +1190,16 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (../K/data/sample/1.in) (../K/data/sample/1.ans) (../K/data/sample/2.in)
 (../K/data/sample/2.ans) [15] [16] (./L/statement.tex) (./L/input.tex)
 (./L/output.tex) (./L/spec.tex) (../L/data/sample/1.in) (../L/data/sample/1.ans
-) (../L/data/sample/2.in) (../L/data/sample/2.ans) [17] (./M/statement.tex)
-(./M/input.tex) (./M/output.tex) (./M/spec.tex) (../M/data/sample/1.in)
-(../M/data/sample/1.ans) [18] (./main.aux)
+) [17] (./M/statement.tex) (./M/input.tex) (./M/output.tex) (./M/spec.tex)
+(../M/data/sample/1.in) (../M/data/sample/1.ans) [18] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29214 strings out of 476919
- 578443 string characters out of 5827675
+ 29202 strings out of 476919
+ 578185 string characters out of 5827675
  974908 words of memory out of 5000000
- 48474 multiletter control sequences out of 15000+600000
+ 48470 multiletter control sequences out of 15000+600000
  407328 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  87i,12n,89p,1193b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
