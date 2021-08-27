@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 13:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.6.9)  27 AUG 2021 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,28 +1180,30 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (../E/data/sample/3.in) (../E/data/sample/3.ans) [7] [8] (./F/statement.tex)
 (./F/input.tex) (./F/output.tex) (./F/spec.tex) (../F/data/sample/1.in)
 (../F/data/sample/1.ans) [9] (./G/statement.tex) (./G/input.tex)
-(./G/output.tex) (./G/spec.tex [10]) [11] (./H/statement.tex) (./H/input.tex)
+(./G/output.tex) (./G/spec.tex [10]) (../G/data/sample/1.in)
+(../G/data/sample/1.ans) [11] (./H/statement.tex) (./H/input.tex)
 (./H/output.tex) (./H/spec.tex) (../H/data/sample/1.in) (../H/data/sample/1.ans
 ) [12] (./I/statement.tex) (./I/input.tex) (./I/output.tex) (./I/spec.tex)
 (../I/data/sample/1.in) (../I/data/sample/1.ans) [13] (./J/statement.tex)
 (./J/input.tex) (./J/output.tex) (./J/spec.tex) (../J/data/sample/1.in)
 (../J/data/sample/1.ans) (../J/data/sample/2.in) (../J/data/sample/2.ans)
 [14] (./K/statement.tex) (./K/input.tex) (./K/output.tex) (./K/spec.tex)
-[15] (./L/statement.tex) (./L/input.tex) (./L/output.tex) (./L/spec.tex)
-(../L/data/sample/1.in) (../L/data/sample/1.ans) (../L/data/sample/2.in)
-(../L/data/sample/2.ans) [16] (./M/statement.tex) (./M/input.tex)
-(./M/output.tex) (./M/spec.tex) (../M/data/sample/1.in) (../M/data/sample/1.ans
-) [17] (./main.aux)
+(../K/data/sample/1.in) (../K/data/sample/1.ans) (../K/data/sample/2.in)
+(../K/data/sample/2.ans) [15] [16] (./L/statement.tex) (./L/input.tex)
+(./L/output.tex) (./L/spec.tex) (../L/data/sample/1.in) (../L/data/sample/1.ans
+) (../L/data/sample/2.in) (../L/data/sample/2.ans) [17] (./M/statement.tex)
+(./M/input.tex) (./M/output.tex) (./M/spec.tex) (../M/data/sample/1.in)
+(../M/data/sample/1.ans) [18] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29196 strings out of 476919
- 578056 string characters out of 5827675
+ 29214 strings out of 476919
+ 578443 string characters out of 5827675
  974908 words of memory out of 5000000
- 48468 multiletter control sequences out of 15000+600000
+ 48474 multiletter control sequences out of 15000+600000
  407328 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  87i,12n,89p,1193b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (17 pages).
+Output written on main.pdf (18 pages).

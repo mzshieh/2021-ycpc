@@ -1,1 +1,7 @@
+You are given a string $s = s_1 s_2 s_3 ... s_n$.
+Let $f(s,i)$ denotes the starting position of the best length-$i$ substring.
+For two equal-length substring $a$ and $b$, the one has smaller lexicographically order is better.
+If the two substring are the same, the one has smaller starting position is better.
 
+Let $h(s) = \sum_{i=1}^n i \times f(s, i)$.
+Your task is to find $h(s)$.
