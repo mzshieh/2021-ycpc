@@ -1,1 +1,21 @@
+Classic problems in competitive programming are problems frequently appearing
+in programming contests. This problem is also a very classic one in the field
+of computational geometry. It is about to answer which points are covered by 
+a given simple polygon.
 
+To state the problem precisely, we first give the definition of a polygon.
+A polygon of $n$ edges is described by $n$ straight line segments
+$e_1,e_2,\dots,e_n$ connected to form a closed chain. That is, there exists
+a sequence of vertices $v_1=(x_1,y_1),v_2=(x_2,y_2),\dots,v_n=(x_n,y_n)$ such
+that $e_n=\overline{v_nv_1}$ and $e_i=\overline{v_iv_{i+1}}$ for $1\le i< n$.
+Note that we can define a polygon with a sequence of vertices mentioned above.
+
+A simple polygon is a polygon that does not intersect itself. 
+That is, any two line segments may only meet each other on their endpoints.
+Therefore, a simple polygon encloses a region call its interior.
+A point $p$ is covered by a simple polygon $P$ if and only if $p$ lies on some
+edge of $P$ or the interior of $P$.
+
+In this problem, you are given a simple polygon of $n$ edges defined 
+by a sequence of vertices and $m$ points on 2D-plane. Please write a program
+to determine which points are covered by the givin simple polygon.
