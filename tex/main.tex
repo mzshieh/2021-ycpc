@@ -95,15 +95,15 @@
 
 \newcommand{\problem}[4] % dir, title, time, memory
 {
-	% \checkoddpage
-	% \ifoddpage
+	\checkoddpage
+	\ifoddpage
 		% do nothing
-	% \else
-	% 	\begin{center}\vspace*{\fill}
-	% 		{\LARGE Almost blank page}
-	% 	\vspace*{\fill}\end{center}
-	% 	\newpage
-	% \fi
+	\else
+		\begin{center}\vspace*{\fill}
+			{\LARGE Almost blank page}
+		\vspace*{\fill}\end{center}
+		\newpage
+	\fi
 
 	\stepcounter{pid}
     \vspace*{-8mm}
@@ -127,10 +127,10 @@
 	
 	\field[0]{#1}{Technical Specification}{spec.tex}
 	\vspace{3mm}
-	%\ifthenelse{\equal{#1}{A}}{\newpage}{}%%%
-	%\ifthenelse{\equal{#1}{B}}{\newpage}{}%%%
-	%\ifthenelse{\equal{#1}{E}}{\newpage}{}%%%
-	%\ifthenelse{\equal{#1}{H}}{\newpage}{}%%%
+	\ifthenelse{\equal{#1}{E}}{\newpage}{}%%%
+	\ifthenelse{\equal{#1}{I}}{\newpage}{}%%%
+	\ifthenelse{\equal{#1}{J}}{\newpage}{}%%%
+	\ifthenelse{\equal{#1}{K}}{\newpage}{}%%%
 	
 	\testdata{#1}
 	\field[0]{#1}{Hint}{hint.tex}
