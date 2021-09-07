@@ -1,8 +1,4 @@
-#include<algorithm>
-#include<stdio.h>
-#include<math.h>
-#include<map>
-#include<vector>
+#include<bits/stdc++.h>
 #define pll pair<LL,LL>
 #define LL long long
 #define x first
@@ -90,8 +86,7 @@ int main(){
             sum1+=cross(v[j],v[(j+1)%m],p[i]);
             sum2+=abs(cross(v[j],v[(j+1)%m],p[i]));
         }
-       // printf("%lld %lld %lld\n",sum1,sum2,v.size());
-        if(abs(sum1)==abs(sum2)&&v.size()>2){
+        if(abs(sum1)==abs(sum2)&&v.size()){
             for(int j =0;j<n;j++)d[i][j]=1e18;
             continue;
         }
@@ -99,6 +94,7 @@ int main(){
         long double l=tmp-pi,r=tmp+pi;
         long double Max=tmp,Min=tmp;
         int Maxi=0,Mini=0;
+        
         for(int j =0;j<m;j++){
             long double val=atan2l(v[j].y-p[i].y,v[j].x-p[i].x);
             if(val>r)val-=2*pi;
