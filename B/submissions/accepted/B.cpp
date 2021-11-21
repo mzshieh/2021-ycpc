@@ -161,7 +161,7 @@ void solve() {
 
     long long sum = 0;
     for (int i = 1; i <= n; i++) {
-        sum += i * (ans[i] + 1);
+        sum += 1LL * i * (ans[i] + 1);
     }
     cout << sum << '\n';
 }
